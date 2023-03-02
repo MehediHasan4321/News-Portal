@@ -86,6 +86,7 @@ function showNewsOnDisplay(news) {
 
         newsCard.appendChild(div)
     })
+    
 }
 
 const fetchDetails = (id)=>{
@@ -96,7 +97,6 @@ const fetchDetails = (id)=>{
 
     })
 }
-
 //News Modal......
 
 function showNewsDetails(newsDetails){
@@ -141,11 +141,14 @@ function showNewsDetails(newsDetails){
 
 
 document.getElementById("trending").addEventListener("click",()=>{
+    
     let trendingFilter = trendingNews.filter((singleData =>singleData.others_info.is_trending === true)) 
     showNewsOnDisplay(trendingFilter)
 })
 
 document.getElementById("todays-pic").addEventListener("click",()=>{
+    
     let todaysFilter = trendingNews.filter((singleData=>singleData.others_info.is_todays_pick===true))
     showNewsOnDisplay(todaysFilter)
 })
+
