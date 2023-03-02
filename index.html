@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/80133de64f.js" crossorigin="anonymous"></script>
+    <title>News Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body onload="loadNews()" class="bg-body-tertiary">
+    <header class=" bg-body-tertiary py-4 text-muted">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+            <div class="container d-flex justify-content-between">
+                <div class="d-flex fw-bold align-items-center gap-2">
+                    <a class="nav-link px-3 py-2 btn btn-warning" href="#">News</a>
+                    <a class="nav-link " href="#">Portal</a>
+                </div>
+                <div class="fw-bold">
+                    <div class="navbar-nav gap-2">
+                        <a class="nav-link px-3" href="#">News</a>
+                        <a class="nav-link " aria-current="page" href="#">Blog</a>
+                        <img src="./assets/Avatar.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <hr class="container ">
+        <div class="container d-flex gap-4 justify-content-between mb-4" id="news-catagory">
+
+
+        </div>
+        <div class="alert alert-light container mb-2" role="alert">
+            <span id="item-number">0</span> item found for <span id="item-name">Catagory</span>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center gap-2">
+                    <label class="fs-5" for="" style="width: 130px;"> sort by :</label>
+                    <select class="form-select">
+                        <option value="0">Default</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="d-flex justify-content-center gap-2">
+                    <button class="btn btn-warning px-3" id="todays-pic">Today's Pic</button>
+                    <button class="btn btn-outline-warning px-3" id="trending">Tranding</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container my-5">
+        <!-- cards -->
+        <section id="news-cards">
+
+        </section>
+        <section>
+            <!-- Button trigger modal -->
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
